@@ -1,0 +1,15 @@
+@use "../../../styles/variables" as v;
+
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: v.$space-1;
+  font-size: v.$font-size-sm;
+  font-weight: 600;
+  padding: v.$space-1 v.$space-2;
+  color: var(--color-text);
+  background: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: v.$radius-full;
+  cursor: pointer;
+}

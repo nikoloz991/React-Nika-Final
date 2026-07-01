@@ -1,0 +1,19 @@
+@use "../../../styles/variables" as v;
+
+.tag {
+  display: inline-block;
+  font-size: v.$font-size-xs;
+  font-weight: 600;
+  padding: v.$space-1 v.$space-2;
+  border-radius: v.$radius-full;
+}
+.accent {
+  background: color-mix(in srgb, var(--color-accent) 20%, transparent);
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+}
+.primary {
+  background: color-mix(in srgb, var(--color-primary) 20%, transparent);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}

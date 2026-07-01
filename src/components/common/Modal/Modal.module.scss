@@ -1,0 +1,59 @@
+@use "../../../styles/variables" as v;
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: v.$z-modal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: v.$space-4;
+  background: var(--color-scrim);
+  animation: fade 200ms ease;
+}
+.dialog {
+  width: 100%;
+  max-width: 520px;
+  max-height: 85vh;
+  overflow-y: auto;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: v.$radius-lg;
+  animation: pop 200ms ease;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: v.$space-4;
+}
+.title {
+  margin: 0;
+}
+.close {
+  background: transparent;
+  border: none;
+  color: var(--color-text);
+  cursor: pointer;
+}
+.body {
+  padding: 0 v.$space-4 v.$space-4;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes pop {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

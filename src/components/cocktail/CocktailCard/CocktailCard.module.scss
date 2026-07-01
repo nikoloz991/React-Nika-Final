@@ -1,0 +1,37 @@
+@use "../../../styles/variables" as v;
+
+.card {
+  overflow: hidden;
+  transition:
+    transform v.$transition-base,
+    box-shadow v.$transition-base;
+  &:hover {
+    transform: translateY(-4px);
+  }
+}
+.media {
+  display: block;
+  img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    transition: transform v.$transition-base;
+  }
+  &:hover img {
+    transform: scale(1.05);
+  }
+}
+.body {
+  display: flex;
+  align-items: center;
+  gap: v.$space-2;
+  padding: v.$space-3;
+}
+.name {
+  flex: 1;
+  margin: 0;
+  font-size: v.$font-size-lg;
+}
+.active {
+  color: var(--color-accent);
+}

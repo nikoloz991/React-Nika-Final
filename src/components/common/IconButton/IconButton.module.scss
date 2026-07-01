@@ -1,0 +1,20 @@
+@use "../../../styles/variables" as v;
+
+.iconButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: v.$space-2;
+  background: transparent;
+  color: var(--color-text);
+  border: none;
+  border-radius: v.$radius-full;
+  cursor: pointer;
+  transition:
+    background v.$transition-fast,
+    color v.$transition-fast;
+  &:hover {
+    background: var(--color-border);
+    color: var(--color-primary);
+  }
+}

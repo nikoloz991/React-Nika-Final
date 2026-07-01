@@ -1,0 +1,24 @@
+@use "../../../styles/variables" as v;
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: v.$space-1;
+}
+.label {
+  font-size: v.$font-size-sm;
+  color: var(--color-text-muted);
+}
+.input {
+  font-family: v.$font-body;
+  font-size: v.$font-size-base;
+  padding: v.$space-2 v.$space-3;
+  color: var(--color-text);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: v.$radius-sm;
+  &:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 1px;
+  }
+}

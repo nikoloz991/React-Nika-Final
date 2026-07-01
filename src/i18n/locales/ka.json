@@ -1,0 +1,46 @@
+{
+  "app": {
+    "name": "Mixly",
+    "tagline": "აღმოაჩინე შენი შემდეგი კოქტეილი"
+  },
+  "nav": {
+    "home": "მთავარი",
+    "browse": "ძიება",
+    "favorites": "ფავორიტები",
+    "about": "შესახებ",
+    "surprise": "რენდომულად",
+    "switchToLight": "გადართვა ღია თემაზე",
+    "switchToDark": "გადართვა მუქ თემაზე"
+  },
+  "common": {
+    "loading": "იტვირთება",
+    "retry": "ხელახლა",
+    "error": "რაღაც ვერ მოხერხდა",
+    "noResults": "შედეგი ვერ მოიძებნა",
+    "cancel": "გაუქმება"
+  },
+  "favorites": {
+    "empty": "ფავორიტები ცარიელია",
+    "clear": "გასუფთავება",
+    "confirmClear": "წავშალო ყველა ფავორიტი?"
+  },
+  "detail": {
+    "ingredients": "ინგრედიენტები",
+    "instructions": "მომზადება",
+    "addFavorite": "ფავორიტებში დამატება",
+    "removeFavorite": "ფავორიტებიდან წაშლა"
+  },
+  "browse": {
+    "searchPlaceholder": "მოძებნე კოქტეილი",
+    "byName": "სახელით",
+    "byIngredient": "ინგრედიენტით",
+    "category": "კატეგორია",
+    "glass": "ჭიქა",
+    "alcoholic": "ტიპი",
+    "all": "ყველა"
+  },
+  "about": {
+    "title": "Mixly-ის შესახებ",
+    "credit": "მონაცემები: TheCocktailDB"
+  }
+}

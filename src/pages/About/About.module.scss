@@ -1,0 +1,34 @@
+@use "../../styles/variables" as v;
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: v.$space-4;
+  max-width: 640px;
+  animation: rise 350ms ease;
+}
+.tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: v.$space-2;
+  list-style: none;
+  padding: 0;
+  li {
+    padding: v.$space-1 v.$space-3;
+    border: 1px solid var(--color-border);
+    border-radius: v.$radius-full;
+  }
+}
+.credit {
+  color: var(--color-text-muted);
+}
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

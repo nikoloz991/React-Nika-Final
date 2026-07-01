@@ -1,0 +1,15 @@
+@use "../../../styles/variables" as v;
+
+.link {
+  display: block;
+  text-decoration: none;
+  color: var(--color-text);
+  text-align: center;
+}
+.image {
+  width: 100%;
+  border-radius: v.$radius-lg;
+}
+.name {
+  margin: v.$space-3 0 0;
+}

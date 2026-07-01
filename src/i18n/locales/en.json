@@ -1,0 +1,46 @@
+{
+  "app": {
+    "name": "Mixly",
+    "tagline": "Discover your next cocktail"
+  },
+  "nav": {
+    "home": "Home",
+    "browse": "Browse",
+    "favorites": "Favorites",
+    "about": "About",
+    "surprise": "Surprise me",
+    "switchToLight": "Switch to light theme",
+    "switchToDark": "Switch to dark theme"
+  },
+  "common": {
+    "loading": "Loading",
+    "retry": "Retry",
+    "error": "Something went wrong",
+    "noResults": "No results found",
+    "cancel": "Cancel"
+  },
+  "favorites": {
+    "empty": "No favourites yet",
+    "clear": "Clear all",
+    "confirmClear": "Remove all favourites?"
+  },
+  "detail": {
+    "ingredients": "Ingredients",
+    "instructions": "Instructions",
+    "addFavorite": "Add to favourites",
+    "removeFavorite": "Remove from favourites"
+  },
+  "browse": {
+    "searchPlaceholder": "Search cocktails",
+    "byName": "By name",
+    "byIngredient": "By ingredient",
+    "category": "Category",
+    "glass": "Glass",
+    "alcoholic": "Type",
+    "all": "All"
+  },
+  "about": {
+    "title": "About Mixly",
+    "credit": "Data provided by TheCocktailDB"
+  }
+}

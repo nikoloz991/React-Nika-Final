@@ -1,0 +1,45 @@
+@use "../../../styles/variables" as v;
+
+.button {
+  font-family: v.$font-body;
+  font-weight: 600;
+  border: 1px solid transparent;
+  border-radius: v.$radius-sm;
+  cursor: pointer;
+  transition:
+    transform v.$transition-fast,
+    opacity v.$transition-fast,
+    background v.$transition-fast;
+  &:active {
+    transform: translateY(1px);
+  }
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+.primary {
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+}
+.secondary {
+  background: var(--color-accent);
+  color: var(--color-on-accent);
+}
+.ghost {
+  background: transparent;
+  color: var(--color-text);
+  border-color: var(--color-border);
+}
+.sm {
+  padding: v.$space-1 v.$space-3;
+  font-size: v.$font-size-sm;
+}
+.md {
+  padding: v.$space-2 v.$space-4;
+  font-size: v.$font-size-base;
+}
+.lg {
+  padding: v.$space-3 v.$space-6;
+  font-size: v.$font-size-lg;
+}

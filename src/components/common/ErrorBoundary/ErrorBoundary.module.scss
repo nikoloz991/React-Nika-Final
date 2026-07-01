@@ -1,0 +1,7 @@
+@use "../../../styles/variables" as v;
+
+.fallback {
+  padding: v.$space-8;
+  text-align: center;
+  color: var(--color-error);
+}

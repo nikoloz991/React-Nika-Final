@@ -1,0 +1,75 @@
+@use "../../../styles/variables" as v;
+@use "../../../styles/mixins" as m;
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: v.$z-dropdown;
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+}
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+.brand {
+  font-family: v.$font-heading;
+  font-size: v.$font-size-xl;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+.links {
+  display: flex;
+  gap: v.$space-4;
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+  @include m.respond-to("md") {
+    clip: auto;
+    position: static;
+    pointer-events: auto;
+    opacity: 1;
+  }
+}
+.link {
+  color: var(--color-text);
+  text-decoration: none;
+  &:hover {
+    color: var(--color-primary);
+  }
+}
+.active {
+  color: var(--color-primary);
+}
+.actions {
+  display: flex;
+  align-items: center;
+  gap: v.$space-2;
+}
+.burger {
+  display: inline-flex;
+  background: transparent;
+  border: none;
+  color: var(--color-text);
+  cursor: pointer;
+  @include m.respond-to("md") {
+    display: none;
+  }
+}
+.open {
+  opacity: 1;
+  pointer-events: auto;
+  clip: auto;
+  position: absolute;
+  top: 64px;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  padding: v.$space-4;
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+}

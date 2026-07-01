@@ -1,0 +1,39 @@
+@use "../../styles/variables" as v;
+@use "../../styles/mixins" as m;
+
+.detail {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: v.$space-6;
+  animation: rise 350ms ease;
+  @include m.respond-to("md") {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.image {
+  width: 100%;
+  border-radius: v.$radius-lg;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: v.$space-4;
+}
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: v.$space-2;
+}
+.error {
+  text-align: center;
+}
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

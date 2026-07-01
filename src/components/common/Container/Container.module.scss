@@ -1,0 +1,12 @@
+@use "../../../styles/variables" as v;
+@use "../../../styles/mixins" as m;
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 v.$space-4;
+  @include m.respond-to("lg") {
+    padding: 0 v.$space-8;
+  }
+}
